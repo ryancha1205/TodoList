@@ -1,21 +1,21 @@
-#TODO list
+# TODO list
 
 Todo list a simple react components App
 you can add items on typing what you want to add
 
-#App
+# App
 
--App is the parent component,
--I added the children component TodoForm and TodoList
--set state of todos, In order to use the state
--I needed to fetch the state into the other components
-###Transfer state to other components
+- App is the parent component,
+- I added the children component TodoForm and TodoList
+- set state of todos, In order to use the state
+- I needed to fetch the state into the other components
+### Transfer state to other components
 ```sh
 $<TodoForm todo_data={this.state.todos}
 addNewTodoFunc={this.addNewTodo.bind(this)}/>
 $<Todolist todo_data={this.state.todos}/>
 ```
-###TodoForm
+### TodoForm
 -In order to make value of what I have typed
 -Set state text as what I type
 
@@ -37,8 +37,8 @@ updateText(event){
 }
 ```
 
--Button function as fetch todos data from app Component
--and add data of what I have typed, using text
+- Button function as fetch todos data from app Component
+- and add data of what I have typed, using text
 ```
  <button onClick={()=>this.addTodo()}>
 ```
